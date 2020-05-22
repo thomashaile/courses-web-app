@@ -2,18 +2,26 @@
 <html>
 
 <head>
-  <meta charset="utf-8" />
-  <title>courses web-app</title>
+    <meta charset="utf-8" />
+    <title>courses web-app</title>
 
-  <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css">
 
-  <script type="module">
-    import { init } from './app/init.js'
-    window.onload = init;
-  </script>
+    <script type="module">
+        import { init } from './app/init.js' window.onload = init;
+    </script>
 </head>
 
 <body>
+    <div>
+        <h2>Courses Web-app </h2>
+        <!-- i tried only post  -->
+        <form id='save-form' action="/api/courses" method="POST">
+            <input id='file-name' name='fileName' placeholder='add course name' />
+            <button id='save-button'>Save</button>
+        </form>
+
+    </div>
 
 </body>
 

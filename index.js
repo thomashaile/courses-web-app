@@ -28,12 +28,7 @@ if (config.MODE === 'development') {
     app.use(morgan('dev'));
 };
 app.use(express.urlencoded({ extended: false }));
-app.get("/", (req, res) =>
-    res.render("index", {
-        title: "Courses Web App",
-        courses,
-    })
-);
+
 
 app.use('/', express.static(path.join(__dirname, 'client')));
 
